@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Montserrat', sans-serif;
+padding: 20px;
+font-size: 20px;
+background-color: rgb(186, 226, 229);
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea{
+border: 3px solid rgb(8, 102, 109);
+border-radius: 8px;
+width: 100%;
+}
+
+button {
+    background-color: rgb(13, 161, 172) ;
+    border: 3px solid rgb(8, 102, 109);
+    border-radius: 8px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.header {/* bütün header lari etkiler  */
+    display: flex; /* yanyana geldi yazilar */
+    align-items: center;/* tam yanyana geldi */
+    justify-content: space-between; /* esit saga sola yazilari dagitti */
+    border: 3px solid rgb(8, 102, 109) ;
+    border-radius: 50px;
+    background-color: rgb(46, 214, 226) ;
+    padding: 15px;
+}
+.header .title { /* isim ve meslek basligi  */
+    display: flex;/* yanyana getirir ama tam istedigimiz gibi degil  */
+    align-items: center; /* yazilari  tamyan yana getirdik ama cok yakin,  */
+    gap: 30px; /* arasina biraz bosluk koyduk  */
+    
+}
+
+.content .about img{ /* resimin adresi */
+    width: 500px;/* genislik */
+    height: 500px;/* yükseklik ayarlandi */
+    border: 10px solid rgb(8, 102, 109) ;/* cerceve rengi */
+    border-radius: 250px;/*resmi ovalledik, 250 pixel yazarsak yuvarlak olur  */
+    margin-left: 150px;
+}
+
+.content .about {/* resmin sagindaki yazi    */
+    display: flex;/*ortaladik kabaca  */
+    align-items: center;/* tam ortala */
+    gap: 30px;/* arasini actik */
+    width: 80%;
+    margin: 40px;
+    padding: 40px;
+}
+
+.content{ /*tamamin hizalamak istiyorum   */
+    display: flex;
+    flex-direction: column;/* yönünü degistir */
+    align-items: center;/* yatayda hizalandi ama sayfaya dagildi */
+}
+
+.section{
+    width: 60%;/*sayfanin %60 inda kalsin  */
+}
+.section .card{ /* bütün cardlar */
+    display: flex;
+    align-items: center;/* merkeze hizala */
+    border: 3px solid rgb(8, 102, 109) ;/* border renk at */
+    border-radius: 30px;/* kenari yivarla */
+    margin: 40px;/* dis mesafe */
+    padding: 40px;/*yazinin border auzakligi  */
+    background-color: rgb(46, 214, 226) ;
+    box-shadow: 20px 20px 20px gray;
+}
+.section .card .left{/* soldaki yazi */
+    flex: 2;/* icindeki oran */
+}
+.section .card .right{
+    flex: 1;
+}
+.footer{/* alttaki yazilar */
+    display: flex;
+    justify-content: space-around;
+    border-top: 3px dotted gray;
+}
